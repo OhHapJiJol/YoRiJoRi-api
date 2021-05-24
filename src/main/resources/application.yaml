@@ -2,9 +2,9 @@ spring:
     # DataSource Configuration
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://yorijori-db.cdxp4ultx56n.ap-northeast-2.rds.amazonaws.com:3306/ohjj
-        username: yorijori
-        password: yorijori-rds
+        url: ENC(OM8FArOSr1RTeOU24F1e4EHG6H6gRxsw1HaUvrkhe+qWqiqcYbO1Dx0IUMAlxEHWuvtoz9BWnIwtlhlPjX8ggMX7q0T8gGDJWKAnSjkbarGLC3sfmxBdnYMbqmyf9KdktujaRFH8Mf7o5mgezwrNNA==)
+        username: ENC(Do+u29G7LIe+nsWjOH0CV529knmEeLTK/mqpAP/m6P7imewEUsKb5g==)
+        password: ENC(tscLTro08ZvWbFqplKY2KXotg7QKEh2bmFyKPEJ2gxH0dKyEOhMP/w==)
     # JPA Configuration
     jpa:
         database: mysql
@@ -12,3 +12,8 @@ spring:
         generate-ddl: true
         hibernate:
             ddl-auto: none
+
+jasypt:
+  encryptor:
+      bean: jasyptStringEncryptor
+      key: yorijori
